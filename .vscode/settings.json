@@ -1,0 +1,25 @@
+{
+    "chrome.executable": "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe"
+  , "chrome.profileDir": "C:/My/Data/chrome/profile"
+  , "docsify.port" : 55000
+  , "typescript.validate.enable": false
+
+  , "terminal.integrated.profiles.windows": 
+     { "PowerShell": { "source": "PowerShell", "icon": "terminal-powershell" }
+     , "Command Prompt": 
+        { "path": 
+           [ "${env:windir}\\Sysnative\\cmd.exe"
+           , "${env:windir}\\System32\\cmd.exe"
+              ]
+           , "icon": "terminal-cmd"
+           }
+     , "GitBash": 
+        { "path": ["C:\\Program Files\\Git\\bin\\bash.exe"]
+        , "source": "Git Bash"
+        , "icon": "terminal-bash"
+           }
+        }    
+
+  , "terminal.integrated.defaultProfile.windows": "GitBash"
+
+  }

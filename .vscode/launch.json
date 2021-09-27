@@ -1,0 +1,111 @@
+{
+     "version": "0.2.0",
+     "configurations": [
+    
+			  {
+			   "type": "vscode-edge-devtools.debug",
+			   "request": "launch",
+			   "name": "Edge DevTools",
+			   "url": ""
+      		},
+
+
+        {
+         "type": "node",
+         "request": "launch",
+         "name": "Current NodeJS Script",
+         "skipFiles": [ "<node_internals>/**" ],
+         "program": "${workspaceFolder}\\${file}"
+          },
+
+
+        {
+           "type": "node",
+           "request": "launch",
+           "name": "server2/app1s 50371 *",
+           "skipFiles": [ "<node_internals>/**" ],
+           "cwd": "${workspaceFolder}\\server2\\app1s",
+           "runtimeExecutable": "npm",
+           "runtimeArgs": [ "run-script", "server" ]
+          },        
+        {  "type": "node",
+           "request": "launch",
+           "name": "client2/app1c 50321 *",
+           "skipFiles": [ "<node_internals>/**" ],
+           "cwd": "${workspaceFolder}\\client2\\app1c",
+           "runtimeExecutable": "npm",
+           "runtimeArgs": [ "run-script", "client" ]
+          },
+        {
+          "type": "node",
+          "request": "launch",
+          "name": "both/app1 50321 50371",
+          "skipFiles": [ "<node_internals>/**" ],
+          "cwd": "${workspaceFolder}\\client2\\app1c",
+          "runtimeExecutable": "npm",
+          "runtimeArgs": [ "run-script", "both" ]
+          },
+
+
+        {
+           "type": "node",
+           "request": "launch",
+           "name": "server2/app3s 50373 *",
+           "skipFiles": [ "<node_internals>/**" ],
+           "cwd": "${workspaceFolder}\\server2\\app3s",
+           "runtimeExecutable": "npm",
+           "runtimeArgs": [ "run-script", "server" ]
+          },
+        {
+           "type": "node",
+           "request": "launch",
+           "name": "client2/app3c 50323 *",
+           "skipFiles": [ "<node_internals>/**" ],
+           "cwd": "${workspaceFolder}\\client2\\app3c",
+           "runtimeExecutable": "npm",
+           "runtimeArgs": [ "run-script", "client" ]
+          },
+         {
+           "type": "node",
+           "request": "launch",
+           "name": "both/app3 50323 50374",
+           "skipFiles": [ "<node_internals>/**" ],
+           "cwd": "${workspaceFolder}\\client2\\app3c",
+           "runtimeExecutable": "npm",
+           "runtimeArgs": [ "run-script", "both" ]
+           },
+
+
+
+        {
+           "type": "node",
+           "request": "launch",
+           "name": "server2/app4s 50374 *",
+           "skipFiles": [ "<node_internals>/**" ],
+           "cwd": "${workspaceFolder}\\server2\\app4s",
+           "runtimeExecutable": "npm",
+           "runtimeArgs": [ "run-script", "server" ]
+          },
+
+        {
+           "type": "node",
+           "request": "launch",
+           "name": "client2/app4c 50324 *",
+           "skipFiles": [ "<node_internals>/**" ],
+           "cwd": "${workspaceFolder}\\client2\\app4c",
+           "runtimeExecutable": "npm",
+           "runtimeArgs": [ "run-script", "client" ]
+          },
+         {
+           "type": "node",
+           "request": "launch",
+           "name": "both/app4 50324 50374",
+           "skipFiles": [ "<node_internals>/**" ],
+           "cwd": "${workspaceFolder}\\client2\\app4c",
+           "runtimeExecutable": "npm",
+           "runtimeArgs": [ "run-script", "both" ]
+           }
+       
+
+        ]
+}

@@ -1,0 +1,90 @@
+{
+     "version": "0.2.0",
+     "configurations": [
+        {
+         "type": "node",
+         "request": "launch",
+         "name": "Run Current NodeJS Script",
+         "skipFiles": [ "<node_internals>/**" ],
+         "program": "${workspaceFolder}\\${file}"
+          },
+
+
+        {
+          "type": "node",
+          "request": "launch",
+          "name": "server2/app1s 50321",
+          "skipFiles": [ "<node_internals>/**" ],
+          "program": "${workspaceFolder}\\server2\\app1s\\server.js"
+           },
+
+
+        {
+          "type": "node",
+          "request": "launch",
+          "name": "both2/app2 50322 50372",
+          "skipFiles": [ "<node_internals>/**" ],
+          "cwd": "${workspaceFolder}\\client\\app2c",
+          "runtimeExecutable": "npm",
+          "runtimeArgs": [ "run-script", "both" ]
+          },
+        {
+           "type": "node",
+           "request": "launch",
+           "name": "client2/app2c 50322 *",
+           "skipFiles": [ "<node_internals>/**" ],
+           "cwd": "${workspaceFolder}\\client\\app3c",
+           "runtimeExecutable": "npm",
+           "runtimeArgs": [ "run-script", "client" ]
+          },
+        {
+           "type": "node",
+           "request": "launch",
+           "name": "server2/app2s 50372 *",
+           "skipFiles": [ "<node_internals>/**" ],
+           "cwd": "${workspaceFolder}\\server\\app2s",
+           "runtimeExecutable": "npm",
+           "runtimeArgs": [ "run-script", "server" ]
+          },
+
+
+         {
+           "type": "node",
+           "request": "launch",
+           "name": "both3/app3 50333 50383",
+           "skipFiles": [ "<node_internals>/**" ],
+           "cwd": "${workspaceFolder}\\client\\app3c",
+           "runtimeExecutable": "npm",
+           "runtimeArgs": [ "run-script", "both" ]
+           },
+        {
+           "type": "node",
+           "request": "launch",
+           "name": "client3/app3c 50333",
+           "skipFiles": [ "<node_internals>/**" ],
+           "cwd": "${workspaceFolder}\\client\\app3c",
+           "runtimeExecutable": "npm",
+           "runtimeArgs": [ "run-script", "client" ]
+          },
+        {
+           "type": "node",
+           "request": "launch",
+           "name": "server3/app3s 50383",
+           "skipFiles": [ "<node_internals>/**" ],
+           "cwd": "${workspaceFolder}\\server\\app3s",
+           "runtimeExecutable": "npm",
+           "runtimeArgs": [ "run-script", "server" ]
+          },
+
+
+
+        {
+          "type": "node",
+          "request": "launch",
+          "name": "server2/app4s 50374 x",
+          "skipFiles": [ "<node_internals>/**" ],
+          "env": { "DEBUG": "sequelize" },
+          "program": "${workspaceFolder}\\server2\\app4s\\server.js"
+           }
+        ]
+}

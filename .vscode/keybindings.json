@@ -1,0 +1,54 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  { "key" : "cmd+shift+d"         , "command": "workbench.action.tasks.runTask"
+  , "args": "Exec DOS Command - Cmd+Shift+D",  "when": "editorTextFocus" }
+
+, { "key" : "cmd+shift+h"         , "command": "workbench.action.tasks.runTask"
+  , "args": "Exec BASH Script - Cmd+Shift+H",  "when": "editorTextFocus" }
+
+, { "key" : "cmd+shift+g"         , "command": "workbench.action.tasks.runTask"
+  , "args": "Open Git Shell - Cmd+Shift+G" }    
+
+, { "key" : "cmd+shift+n"         , "command": "workbench.action.tasks.runTask"
+  , "args": "Run NodeJS Script - Cmd+Shift+N", "when": "editorTextFocus" }
+
+//{ "key" : "ctrl+k"              , "command": "workbench.action.terminal.clear" }                //#.(10124.01.1 RAM)  
+, { "key" : "ctrl+k"              , "command": "workbench.action.tasks.runTask"                   // .(10124.01.1 RAM)  
+  , "args": "Open Chrome",             "when": "editorTextFocus" }                                // .(10124.01.1 RAM)  
+
+, { "key" : "ctrl+d"              , "command": "workbench.action.tasks.runTask"                   // .(10124.01.2 RAM)  
+  , "args": "Open Docs"                        }                                                 // .(10124.01.2 RAM)  
+
+, { "key" : "f8"                  , "command": "macros.PowerShell_RunSelection" 
+                                  , "when"   : "editorTextFocus" }
+
+, { "key" : "alt-f8"              , "command": "macros.Clear_PowerShell_RunSelection" 
+                                  , "when"   : "editorTextFocus" }
+
+, { "key" : "ctrl+shift+l"        , "command": "-extension.launch" }
+
+, { "key" : "ctrl+shift+left"     , "command": "cursorWordStartLeftSelect"
+                                  , "when"   : "editorTextFocus" }
+
+, { "key" : "f9"                  , "command": "sort-lines-by-selection.sortLinesBySelection"     // .(80124.01.1 RAM)                                                 
+                                  , "when"   : "editorTextFocus" }                                // .(80124.01.1 RAM)                                    
+
+, { "key" : "shift+f9"            , "command": "sort-lines-by-selection.sortLinesBySelection"     // .(80124.01.2 RAM)
+  , "args": { "morph": "s.split('').reverse().join()" }, "when" : "editorTextFocus" }             // .(80124.01.2 RAM) 
+
+, { "key" : "alt+a"               , "command": "settings.cycle.files.autoSave" }                  // .(80124.02.3 RAM)
+
+, { "key" : "alt+m"               , "command": "macros.DownloadFiles" } 
+
+, { "key" : "ctrl+shift+a"        , "command": "extension.align" }                                // .(80203.01.1 RAM VSCode Dev Tools says Ctrl+Alt+[a-z] should not be used)
+
+//{ "key" : "ctrl+shift+~"        , "command": "PowerShell.ShowSessionConsole" }                  //#.(80220.01.1 RAM)
+
+, { "key" : "cmd+`"               , "command": "PowerShell.RestartSession" }                      // .(80220.01.2 RAM)             
+
+//{ "key" : "alt+`"               , "command": "workbench.action.terminal.toggleTerminal" }       // .(80320.01.1 RAM)             
+
+//{ "key" : "ctrl+h"              ,	"command": "workbench.action.tasks.runTask", "args": "tsc" }  // .(80522.01.1 RAM)      
+
+, { "key" : "ctrl+h"              ,	"command": "workbench.action.tasks.runTask", "args": "fmtDups" }  // .(80522.01.1 RAM)      
+  ]
