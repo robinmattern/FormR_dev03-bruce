@@ -1,0 +1,46 @@
+{
+  "name": "formr-client-apps",
+  "version": "0.32.017",
+  "private": true,
+  "dependencies": {
+    "admin-lte": "^3.0.5",
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^4.5.2",
+    "concurrently": "^6.0.0",
+    "ra-core": "^3.14.2",
+    "ra-data-json-server": "^3.9.0",
+    "ra-data-simple-rest": "^3.13.4",
+    "react": "17.0.1",
+    "react-admin": "^3.12.2",
+    "react-dom": "^17.0.1",
+    "react-hook-form": "^6.15.4",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.2",
+    "react-validation": "^3.0.7",
+    "redux": "^4.0.5",
+    "serialize-javascript": "^5.0.1",
+    "validator": "^13.5.2",
+    "yup": "^0.32.8"
+  },
+  "scripts": {
+    "start": "echo npm ERROR: * You must be in an app folder to start app",
+    "test": "echo npm TEST error: No test specified && exit 1"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
