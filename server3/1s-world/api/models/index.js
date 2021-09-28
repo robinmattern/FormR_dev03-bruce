@@ -7,10 +7,11 @@
 
 // -------------------------------------------------------------------------------------------------
 
-  var dbConnect          =  require( `${FORMRs_4}/db.connect3-1.js` )                       // .sequelize// .(10325.04.2 RAM Gotta use FORMRs_4).(10326.02.x).(10328.05.1 RAM We love to change names) 
+  var dbConnect          =  require( `${FORMRs_4}/db.connect3-2.njs` )                      // .sequelize// .(10325.04.2 RAM Gotta use FORMRs_4).(10326.02.x).(10328.05.1 RAM We love to change names).(10928.03.1 RAM Changed extension to .njs) 
 
   var pDB                =  dbConnect( '' )                                                 // .(10220.10.3).(10328.06.4 RAM Back to a normal app)
-//var pDB                =  dbConnect( 'MySQL_AWS_WORLD' );                                 // .(10220.10.1 RAM Switch to db.connect).(10328.0x.x).(10414.02.2)
+//var pDB                =  dbConnect( 'MySQL_AWS_WORLD' );                                 //#.(10220.10.1 RAM Switch to db.connect).(10328.0x.x).(10414.02.4).(10928.02.4) 
+  var pDB                =  dbConnect( 'MySQL_AWS_WORLD', 'checkDB' );                      // .(10220.10.1 RAM Switch to db.connect).(10328.0x.x).(10414.02.2).(10928.02.4 RAM add 'checkDB')
 
 //var pDBs               =  { };                                                            // .(10416.01.1)
 //var pDBs               =  dbConnect( 'MySQL_VULTR_IO' );                                  //#.(10319.10.1 RAM Switch to DBSN directly with db.connect)
