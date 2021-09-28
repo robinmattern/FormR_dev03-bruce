@@ -1,0 +1,27 @@
+{
+  "name": "formr-server2-app01s6",
+  "version": "0.2.16",
+  "description": "FormR Server Auth and User Admin App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "node server.js",
+    "client": "cd ..\\..\\client2\\_4\\FR.app02c && npm start",
+    "both": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "authentication",
+    "bcryptjs",
+    "express",
+    "jwt",
+    "mssql",
+    "nodejs",
+    "rest",
+    "sequelize"
+  ],
+  "author": "8020 Data",
+  "license": "ISC",
+  "dependencies": {}
+}
