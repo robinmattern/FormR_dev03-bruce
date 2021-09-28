@@ -6,7 +6,7 @@
 
 //     ------------  =   --------------------------------------------------------
 
-            FormR.setEnv( )                                                             // .(10317.03.8 RAM Only necessary if you need process.env vars to be read from .env)
+//          FormR.setEnv( )                                                             // .(10317.03.8 RAM Only necessary if you need process.env vars to be read from .env).(10922.03.1 RAM is run in FormR.init())
 
 // -- -----------------------------------------------------------------------------------------------
 
