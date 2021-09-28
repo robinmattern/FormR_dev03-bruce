@@ -1,0 +1,35 @@
+{
+  "name": "nodejs-express-sequelize-mysql",
+  "version": "0.1.5",
+  "description": "Node.js Rest Apis with Express, Sequelize & MySQL",
+  "main": "server.js",
+  "scripts": {
+    "start": "echo npm ERROR: * You must be in an app folder to start app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "authentication",
+    "express",
+    "jwt",
+    "mysql",
+    "nodejs",
+    "rest",
+    "sequelize"
+  ],
+  "author": "bezkoder",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-list-endpoints": "^5.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mssql": "^6.2.3",
+    "mysql2": "^2.0.2",
+    "sequelize": "^5.21.2",
+    "tedious": "^9.2.1"
+  }
+}
