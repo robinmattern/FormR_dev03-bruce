@@ -1,1 +1,5 @@
 
+.nav-item            { margin-top: -2px; }
+.MuiToolbar-regular  { background-color: #beb2c0; }
+.MuiToolbar-dense    { display: none; }
+.MuiToolbar-root     { display: none; }
