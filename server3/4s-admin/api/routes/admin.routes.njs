@@ -2,7 +2,7 @@
 
 //          FormR    =   require( `${process.env.FORMR_HOME}/_3/FR.FNSs/FormR.fns.njs` )                            //#.(10418.02.1).(10829.03.1)
        var  FormR    =   require( __dirname.replace( /[\\\/](_3|serv|clie).+/, '') + '/_3/FR.FNSs/FormR_Lib.js' )   // .(10829.03.1)
-            FormR.init(__dirname, __filename );       //  FormR.help(); process.exit()
+            FormR.init(__dirname, __filename );       //  FormR.help(); process.exit()                                    
 
 //   --------------  =   --------------------------------------------------------
 
@@ -32,37 +32,17 @@
             pRouter.use(        setHeader )
 
 //          --------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-//          --------------------------------------------------------------------------------
                                                                                              // .(10917.01.1 Beg RAM Move to admin.routes.njs)
    const    pUserControllers =  require( '../controllers/fruser.controllers.njs' );          // .(10319.05.2).(10328.06.2).(10331.03.2 RAM Changed file name)
    const    pRoleControllers =  require( '../controllers/frrole.controllers.njs' );          // .(10319.05.3).(10328.06.3).(10331.03.3).(10917.04.1 RAM Not used in app3s)
 
             pTableRoutes     =  getControllers( pUserControllers, aShowEm )                  // .(10319.05.4).(10921.05.1 RAM Added aShowEm)
-            pTableRoutes     =  getControllers( pRoleControllers, aShowEm )                  // .(10319.05.6).(10917.04.1).(10921.05.2m)
+            pTableRoutes     =  getControllers( pRoleControllers, aShowEm )                  // .(10319.05.6).(10917.04.1).(10921.05.2)
 
             pRouter.use(        getAppRoutes( pTableRoutes ) )                               // .(10319.05.7)
 
 //          --------------------------------------------------------------------------------
                                                                                              // .(10917.01.1 End)
-
-
-
-
-
-
-
-
-
-
      return pRouter
             };                                                                               // .(10313.01.2 End)
 // -------------------------------------------------------------------------------------------------

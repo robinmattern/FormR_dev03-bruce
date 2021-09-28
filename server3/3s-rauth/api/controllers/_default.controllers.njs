@@ -75,8 +75,13 @@
                    return;
                    }
              const pData    =  Object.keys( req.body ).map( aCol => {                                       // Create record from request
-                   return req.body[ aCol ]
+                   return                   req.body[ aCol ]
                    } )
+//           const pData    = { }
+//                             Object.keys( req.body ).forEach( aCol => {                                   // Create record from request
+//                 pData[ aCol ]          = req.body[ aCol ]
+                   } )
+
                    pModel.create( pData )                                                                   // Create record in databse
                          .then(   pBody => {
                                              res.send( pBody ); } )

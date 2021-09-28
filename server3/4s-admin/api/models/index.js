@@ -7,10 +7,11 @@
 
 // -------------------------------------------------------------------------------------------------
 
-  var dbConnect          =  require( `${FORMRs_4}/db.connect3-1.js` )                       // .sequelize// .(10325.04.2 RAM Gotta use FORMRs_4).(10326.02.x).(10328.05.1 RAM We love to change names) 
+  var dbConnect          =  require( `${FORMRs_4}/db.connect3-2.njs` )                      // .sequelize// .(10325.04.2 RAM Gotta use FORMRs_4).(10326.02.x).(10328.05.1 RAM We love to change names).(10928.03.1 RTAM Changed extension to .njs) 
 
 //var pDB                =  dbConnect( '' )                                                 // .(10220.10.3).(10328.06.4 RAM Back to a normal app)
-  var pDB                =  dbConnect( 'FORMR' );                                           // .(10220.10.1 RAM Switch to db.connect).(10328.0x.x).(10414.02.2)
+//var pDB                =  dbConnect( 'FORMR' );                                           //#.(10220.10.1 RAM Switch to db.connect).(10328.0x.x).(10414.02.2).(10928.01.1)
+  var pDB                =  dbConnect( 'RAUTH', 'checkDB' );                                // .(10220.10.1 RAM Switch to db.connect).(10328.0x.x).(10414.02.2).(10928.01.1 RAM Change DB Reference).(10928.02.3)
 
 //var pDBs               =  { };                                                            // .(10416.01.1)
 //var pDBs               =  dbConnect( 'MySQL_VULTR_IO' );                                  //#.(10319.10.1 RAM Switch to DBSN directly with db.connect)
@@ -25,11 +26,11 @@
       pDB.frrole         =  require(              "../models/frrole.model.js")(  pDB, 'roles'           )   // .(10309.03.1 RAM Need this).(10328.06.8) 
       pDB.frrole.DB      =  pDB // or pDBs[ pDB[ pDB.DBSN ] ]                                               // .(10416.01.5) 
 
-      pDB.city           =  require(              "../models/city.model.js"  )(  pDB, 'city'            )   //#.(10326.03.4 RAM Add World models).(10326.07.x RAM Not in this FormR database)
-      pDB.city.DB        =  pDB // or pDBs[ pDB[ pDB.DBSN ] ]                                               // .(10416.01.6) 
+//    pDB.city           =  require(              "../models/city.model.js"  )(  pDB, 'city'            )   //#.(10326.03.4 RAM Add World models).(10326.07.x RAM Not in this FormR database)
+//    pDB.city.DB        =  pDB // or pDBs[ pDB[ pDB.DBSN ] ]                                               // .(10416.01.6) 
 
-      pDB.country        =  require(              "../models/country.model.js")( pDB, 'country'         )   //#.(10326.03.5).(10326.07.x) 
-      pDB.country.DB     =  pDB // or pDBs[ pDB[ pDB.DBSN ] ]                                               // .(10416.01.7) 
+//    pDB.country        =  require(              "../models/country.model.js")( pDB, 'country'         )   //#.(10326.03.5).(10326.07.x) 
+//    pDB.country.DB     =  pDB // or pDBs[ pDB[ pDB.DBSN ] ]                                               // .(10416.01.7) 
 
 //    pDB.countrylanguage=  require( "../models/countrylanguage.model.js"    )(  pDB, 'countryLanguage' )   //#.(10326.03.6).(10326.07.x)
 //    pDB.countrylanguage.DB =  pDB // or pDBs[ pDB[ pDB.DBSN ] ]                                           // .(10416.01.8) 
@@ -77,7 +78,7 @@
 // -------------------------------------------------------------------------------------------------
 
      if (doTest( 1, __filename )) {   // Check if pDB[ `${aModel} ].create works
-     
+
       var pData   = { 'username'     : 'robin104'
                     , 'email'        : 'robin.mattern@sicomm.net'
                     , 'password'     : '1234'

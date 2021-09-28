@@ -63,5 +63,5 @@
             }; // eof setModel
 // -------------------------------------------------------------------
 
-     module.exports = setModel
+     module.exports          =   setModel
 

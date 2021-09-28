@@ -1,13 +1,13 @@
 {
-  "name": "formr-server2-4s-admin",
+  "name": "formr-server3-4s-admin",
   "version": "0.384.04",
   "description": "Local React Admin Client App (app4s)",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start":  "node server.js",
     "server": "node server.js",
-    "client": "cd ..\\..\\client2\\app4c && npm start",
-    "both": "concurrently \"npm start\" \"npm run client\"",
+    "client": "cd ..\\..\\client3\\4c-admin && npm start",
+    "both": "concurrently \"npm run server\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -25,5 +25,3 @@
   "license": "ISC",
   "dependencies": {}
 }
-
-

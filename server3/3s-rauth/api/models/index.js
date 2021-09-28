@@ -17,7 +17,7 @@
 //var pDBs               =  dbConnect( 'MySQL_VULTR_IO' );                                  //#.(10319.10.1 RAM Switch to DBSN directly with db.connect)
 //var pDBs               =  dbConnect( 'WORLD' );                                           // .(10220.10.1 RAM Switch to db.connect).(10328.0x.x).(10414.02.2)
 //    pDBs[ pDB.DBSN  ]  =  pDB                                                             // .(10416.01.2 RAM This is they way to have muptiple DBs, Not quite, DBSN is assigned to pDB.table.DBSN ) 
-                                
+
 //    pDB.fruser         =  require( "${FORMRs_4_API}/models/fruser.model.js")(  pDB, 'users'           )   //#.(10220.10.4 RAM Was: (sequelize, Sequelize) ).(10328.06.7).(10414.02.3
       pDB.fruser         =  require(              "../models/fruser.model.js")(  pDB, 'users'           )   // .(10220.10.4 RAM Was: (sequelize, Sequelize) ).(10328.06.8) 
       pDB.fruser.DB      =  pDB // or pDBs[ pDB[ pDB.DBSN ] ]                                               // .(10416.01.6) 
@@ -77,7 +77,7 @@
 
 // -------------------------------------------------------------------------------------------------
 
-     if (doTest( 1, __filename )) {   // Check if pDB[ `${aModel} ].create works 
+     if (doTest( 1, __filename )) {   // Check if pDB[ `${aModel} ].create works
 
       var pData   = { 'username'     : 'robin104'
                     , 'email'        : 'robin.mattern@sicomm.net'

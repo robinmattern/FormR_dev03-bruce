@@ -6,8 +6,8 @@
 
 //   --------------  =   --------------------------------------------------------
 
-     var  { getControllers }    =  require( `${FORMRs_4}/controller.fns.njs`  ).fns          // .(10327.04.5 RAM Was: `${APP_HOME}/api/Controllers/_controller.fns.njs`)    
-     var  { getAppRoutes   }    =  require( `${FORMRs_4}/route.fns.njs`       ).fns          // .(10327.04.6 RAM Was: `${APP_HOME}/api/Controllers/_controller.fns.njs`)    
+     var  { getControllers }    =  require( `${FORMRs_4}/controller.fns.njs`  ).fns          // .(10327.04.5 RAM Was: `${APP_HOME}/api/Controllers/_controller.fns.njs`)
+     var  { getAppRoutes   }    =  require( `${FORMRs_4}/route.fns.njs`       ).fns          // .(10327.04.6 RAM Was: `${APP_HOME}/api/Controllers/_controller.fns.njs`)
 
 // --------------------------------------------------------------
 
@@ -36,8 +36,8 @@
    const    pUserControllers =  require( '../controllers/fruser.controllers.njs' );          // .(10319.05.2).(10328.06.2).(10331.03.2 RAM Changed file name)
 // const    pRoleControllers =  require( '../controllers/frrole.controllers.njs' );          // .(10319.05.3).(10328.06.3).(10331.03.3).(10917.04.1 RAM Not used in app3s)
 
-            pTableRoutes     =  getControllers( pUserControllers )                           // .(10319.05.4)
-//          pTableRoutes     =  getControllers( pRoleControllers )                           // .(10319.05.6).(10917.04.1) 
+            pTableRoutes     =  getControllers( pUserControllers, aShowEm )                  // .(10319.05.4).(10921.05.1 RAM Added aShowEm)
+//          pTableRoutes     =  getControllers( pRoleControllers, aShowEm )                  // .(10319.05.6).(10917.04.1).(10921.05.2)
 
             pRouter.use(        getAppRoutes( pTableRoutes ) )                               // .(10319.05.7)
 

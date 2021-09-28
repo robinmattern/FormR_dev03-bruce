@@ -51,7 +51,7 @@
         var pModel           =   pDB.sequelize.define( aTable, pSchema )
             pModel.DBSN      =   pDB.sequelize.config.DBSN
             pModel.Primary   =  'id'                                                    // .(10917.08.1 RAM Or 'ID') 
-            pModel.ToSearch  =  'Name'                                                  // .(10418.03.6).(10917.08.1 RAM Or 'name') 
+            pModel.ToSearch  =  'name'                                                  // .(10418.03.6).(10917.08.1 RAM Or 'name') 
             pModel.RSchema   = { ModelName     :  pJSON.ModelName                       // .(10903.01.3 Beg RAM Get a Live version)
                                , TableName     :  pJSON.TableName
                                , FormR_DBSN    :  pModel.DBSN
