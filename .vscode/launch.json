@@ -1,111 +1,121 @@
-{
+  {
      "version": "0.2.0",
      "configurations": [
-    
-			  {
-			   "type": "vscode-edge-devtools.debug",
-			   "request": "launch",
-			   "name": "Edge DevTools",
-			   "url": ""
-      		},
 
-
-        {
-         "type": "node",
-         "request": "launch",
-         "name": "Current NodeJS Script",
-         "skipFiles": [ "<node_internals>/**" ],
-         "program": "${workspaceFolder}\\${file}"
-          },
-
-
-        {
-           "type": "node",
-           "request": "launch",
-           "name": "server2/app1s 50371 *",
-           "skipFiles": [ "<node_internals>/**" ],
-           "cwd": "${workspaceFolder}\\server2\\app1s",
-           "runtimeExecutable": "npm",
-           "runtimeArgs": [ "run-script", "server" ]
-          },        
-        {  "type": "node",
-           "request": "launch",
-           "name": "client2/app1c 50321 *",
-           "skipFiles": [ "<node_internals>/**" ],
-           "cwd": "${workspaceFolder}\\client2\\app1c",
-           "runtimeExecutable": "npm",
-           "runtimeArgs": [ "run-script", "client" ]
-          },
         {
           "type": "node",
           "request": "launch",
-          "name": "both/app1 50321 50371",
+          "name": "Current NodeJS Script",
           "skipFiles": [ "<node_internals>/**" ],
-          "cwd": "${workspaceFolder}\\client2\\app1c",
-          "runtimeExecutable": "npm",
-          "runtimeArgs": [ "run-script", "both" ]
-          },
-
-
-        {
-           "type": "node",
-           "request": "launch",
-           "name": "server2/app3s 50373 *",
-           "skipFiles": [ "<node_internals>/**" ],
-           "cwd": "${workspaceFolder}\\server2\\app3s",
-           "runtimeExecutable": "npm",
-           "runtimeArgs": [ "run-script", "server" ]
-          },
-        {
-           "type": "node",
-           "request": "launch",
-           "name": "client2/app3c 50323 *",
-           "skipFiles": [ "<node_internals>/**" ],
-           "cwd": "${workspaceFolder}\\client2\\app3c",
-           "runtimeExecutable": "npm",
-           "runtimeArgs": [ "run-script", "client" ]
-          },
-         {
-           "type": "node",
-           "request": "launch",
-           "name": "both/app3 50323 50374",
-           "skipFiles": [ "<node_internals>/**" ],
-           "cwd": "${workspaceFolder}\\client2\\app3c",
-           "runtimeExecutable": "npm",
-           "runtimeArgs": [ "run-script", "both" ]
+          "program": "${workspaceFolder}\\${file}",
            },
 
-
-
         {
-           "type": "node",
-           "request": "launch",
-           "name": "server2/app4s 50374 *",
-           "skipFiles": [ "<node_internals>/**" ],
-           "cwd": "${workspaceFolder}\\server2\\app4s",
-           "runtimeExecutable": "npm",
-           "runtimeArgs": [ "run-script", "server" ]
-          },
-
+          "type": "node",
+          "request": "launch",
+          "name": "server3/1s-world 50381",
+          "cwd": "${workspaceFolder}\\server3\\1s-world",
+          "runtimeExecutable": "npm",
+          "runtimeArgs": [ "run-script", "server" ],
+          "skipFiles": [ "<node_internals>/**" ],
+           },
+        { "type": "node",
+          "request": "launch",
+          "name": "client3/1c-world 50331",
+          "cwd": "${workspaceFolder}\\client3\\1c-world",
+          "runtimeExecutable": "npm",
+          "runtimeArgs": [ "run-script", "client" ],
+          "skipFiles": [ "<node_internals>/**" ],
+           },
         {
-           "type": "node",
-           "request": "launch",
-           "name": "client2/app4c 50324 *",
-           "skipFiles": [ "<node_internals>/**" ],
-           "cwd": "${workspaceFolder}\\client2\\app4c",
-           "runtimeExecutable": "npm",
-           "runtimeArgs": [ "run-script", "client" ]
-          },
-         {
-           "type": "node",
-           "request": "launch",
-           "name": "both/app4 50324 50374",
-           "skipFiles": [ "<node_internals>/**" ],
-           "cwd": "${workspaceFolder}\\client2\\app4c",
-           "runtimeExecutable": "npm",
-           "runtimeArgs": [ "run-script", "both" ]
-           }
-       
+          "type": "node",
+          "request": "launch",
+          "name": "both/1-world 50331 50381",
+          "cwd": "${workspaceFolder}\\client3\\1c-world",
+          "runtimeExecutable": "npm",
+          "runtimeArgs": [ "run-script", "both" ],
+          "skipFiles": [ "<node_internals>/**" ],
+           },
 
-        ]
-}
+       {
+          "type": "node",
+          "request": "launch",
+          "name": "server3/3s-rauth 50383",
+          "cwd": "${workspaceFolder}\\server3\\3s-rauth",
+          "runtimeExecutable": "npm",
+          "runtimeArgs": [ "run-script", "server" ],
+          "skipFiles": [ "<node_internals>/**" ],
+           },
+        { "type": "node",
+          "request": "launch",
+          "name": "client3/3c-rauth 50333",
+          "cwd": "${workspaceFolder}\\client3\\3c-rauth",
+          "runtimeExecutable": "npm",
+          "runtimeArgs": [ "run-script", "client" ],
+          "skipFiles": [ "<node_internals>/**" ],
+           },
+        {
+          "type": "node",
+          "request": "launch",
+          "name": "both/3-rauth 50333 50383",
+          "cwd": "${workspaceFolder}\\client3\\3c-rauth",
+          "runtimeExecutable": "npm",
+          "runtimeArgs": [ "run-script", "both" ],
+          "skipFiles": [ "<node_internals>/**" ],
+           },
+
+{
+          "type": "node",
+          "request": "launch",
+          "name": "server3/4s-admin 50384",
+          "cwd": "${workspaceFolder}\\server3\\4s-admin",
+          "runtimeExecutable": "npm",
+          "runtimeArgs": [ "run-script", "server" ],
+          "skipFiles": [ "<node_internals>/**" ],
+           },
+        { "type": "node",
+          "request": "launch",
+          "name": "client3/4c-admin 50334",
+          "cwd": "${workspaceFolder}\\client3\\4c-admin",
+          "runtimeExecutable": "npm",
+          "runtimeArgs": [ "run-script", "client" ],
+          "skipFiles": [ "<node_internals>/**" ],
+           },
+        {
+          "type": "node",
+          "request": "launch",
+          "name": "both/4-admin 50334 50384",
+          "cwd": "${workspaceFolder}\\client3\\4c-admin",
+          "runtimeExecutable": "npm",
+          "runtimeArgs": [ "run-script", "both" ],
+          "skipFiles": [ "<node_internals>/**" ],
+           },
+
+        {                                                               
+          "type": "node",                                               
+          "request": "launch",                                          
+          "name": "server3/5s-formr 50385",                             
+          "cwd": "${workspaceFolder}\\server3\\5s-formr",               
+          "runtimeExecutable": "npm",                                   
+          "runtimeArgs": [ "run-script", "server" ],                    
+          "skipFiles": [ "<node_internals>/**" ],                       
+           },                                                           
+        { "type": "node",                                               
+          "request": "launch",                                          
+          "name": "client3/5c-formr 50335",                             
+          "cwd": "${workspaceFolder}\\client3\\5c-formr",               
+          "runtimeExecutable": "npm",                                   
+          "runtimeArgs": [ "run-script", "client" ],                    
+          "skipFiles": [ "<node_internals>/**" ],                       
+           },                                                           
+        {                                                               
+          "type": "node",                                               
+          "request": "launch",                                          
+          "name": "both/5-formr 50335 50385",                           
+          "cwd": "${workspaceFolder}\\client3\\5c-formr",               
+          "runtimeExecutable": "npm",                                   
+          "runtimeArgs": [ "run-script", "both" ],                      
+          "skipFiles": [ "<node_internals>/**" ],                       
+           },                                                           
+      ]
+   }
